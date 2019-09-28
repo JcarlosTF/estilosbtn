@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    LLAMAR AL ARCHIVO XML PARA CAMBIAR EL ESTADO O COMPORTAMIENTO DEL BOTON CAUNDO SE PRESIONA-->
+    <item android:drawable="@drawable/change_btn_state" />
+
+</layer-list>

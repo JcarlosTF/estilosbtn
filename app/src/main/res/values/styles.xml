@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--    ESTILOS PARA LOS TEXTOS DE LOS BOTONES PRIMARIOS-->
+                <!--    BOTON NORMAL Y PRESIOANDO-->
+    <style name="btnStyleFontEnable" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColor">@color/colorFont</item>
+        <item name="android:textSize">@dimen/fontSize</item>
+        <item name="android:lineHeight">@dimen/lineHeight</item>
+        <item name="android:letterSpacing">@dimen/letterSpacing</item>
+    </style>
+                    <!--    BOTON DESHABILITADO-->
+    <style name="btnStyleFontDisabled" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColor">@color/colorFontDisabled</item>
+        <item name="android:textSize">@dimen/fontSize</item>
+        <item name="android:lineHeight">@dimen/lineHeight</item>
+        <item name="android:letterSpacing">@dimen/letterSpacing</item>
+    </style>
+
+
+
+
+    <!--    ESTILOS PARA LOS TEXTOS DE LOS BOTONES SECUNDARIOS-->
+                <!--BOTON TEXTO SECUNDARIO NORMAL-->
+    <style name="btnStyleFontDisabledSecondaryNormal" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColor">@color/colorFontSecondaryNormal</item>
+        <item name="android:textSize">@dimen/fontSize</item>
+        <item name="android:lineHeight">@dimen/lineHeight</item>
+        <item name="android:letterSpacing">@dimen/letterSpacing</item>
+    </style>
+            <!--    BOTON TEXTO SECUNDARIO PRESIONADO-->
+    <style name="btnStyleFontDisabledSecondaryPressed" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColor">@color/colorFontSecondaryPressed</item>
+        <item name="android:textSize">@dimen/fontSize</item>
+        <item name="android:lineHeight">@dimen/lineHeight</item>
+        <item name="android:letterSpacing">@dimen/letterSpacing</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+            <!--    BOTON TEXTO SECUNDARIO DESHABILITADO-->
+    <style name="btnStyleFontDisabledSecondaryDisabled" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColor">@color/colorFontDisabledSecondaryDisable</item>
+        <item name="android:textSize">@dimen/fontSize</item>
+        <item name="android:lineHeight">@dimen/lineHeight</item>
+        <item name="android:letterSpacing">@dimen/letterSpacing</item>
+    </style>
+
+
+</resources>

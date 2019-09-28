@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    NOTAS: PARA CAMBIAR EL COMPORTAMIENTO DE LOS TEXTOS DE LOS BOTONES POR EJEMPLO LA ALINEACION DEL TEXTO,
+    COLOR, ESPACIADO ENTRE CARACTERES ETC..
+    SE DEBE DE LLAMAR A LA PROPIEDAD
+    style.
+
+    PARA DARLE UN FONDO DE COLOR A LOS BOTONES SE USAR android:background
+    
+
+    PARA DARLE UNA ANIMACION PERSONALIZADA CUANDO SE PRESIONA LOS BOTONES SE LE TIENE QUE DAR LA PROPIEDAD
+    android:stateListAnimator
+<!--    BOTONES PRIMARIOS-->
+    <Button
+        android:id="@+id/button2"
+        style="@style/btnStyleFontEnable"
+        android:background="@drawable/btn_action_pressed"
+        android:stateListAnimator="@drawable/animation_btn_pressed_global"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="boton selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/btnStyleFontEnable"
+        android:background="@drawable/btn_circle_normal"
+        android:stateListAnimator="@null"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="32dp"
+        android:text="boton normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/btnStyleFontEnable"
+        android:background="@drawable/btn_circle_pressed"
+        android:stateListAnimator="@null"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="boton presionado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/btnStyleFontDisabled"
+        android:background="@drawable/btn_circle_disabled"
+        android:stateListAnimator="@null"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="deshabilitado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+<!--BOTONES SECUNDARIOS-->
+    <Button
+        android:id="@+id/button5"
+        style="@style/btnStyleFontDisabledSecondaryNormal"
+        android:background="@drawable/change_btn_state_secondary"
+        android:stateListAnimator="@drawable/animation_btn_pressed_global"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="BOTON SELECTOR SECUNDARIO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/btnStyleFontDisabledSecondaryPressed"
+        android:background="@drawable/btn_circle_secondary_normal"
+        android:stateListAnimator="@null"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="BOTON NORMAL SECUNDARIO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/btnStyleFontDisabledSecondaryPressed"
+        android:background="@drawable/btn_circle_secondary_pressed"
+        android:stateListAnimator="@null"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="BOTON PRESIONADO SECUNDARIO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/btnStyleFontDisabledSecondaryDisabled"
+        android:background="@drawable/btn_circle_secondary_disable"
+        android:stateListAnimator="@null"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="BOTON DESHABILITADO SECUNDARIO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        app:layout_constraintVertical_bias="0.215" />
+</androidx.constraintlayout.widget.ConstraintLayout>

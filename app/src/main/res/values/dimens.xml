@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    DIMENSIONES PARA EL BOTON NORMAL, PRESIONADO Y DESHABILITADO Y BOTONES SECUNDARIOS-->
+    <dimen name="borderRadius">10dp</dimen>
+    <dimen name="fontSize">16dp</dimen>
+    <dimen name="lineHeight">16dp</dimen>
+    <dimen name="letterSpacing">0</dimen>
+</resources>
