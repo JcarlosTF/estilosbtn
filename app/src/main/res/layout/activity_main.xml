@@ -6,18 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-
-    NOTAS: PARA CAMBIAR EL COMPORTAMIENTO DE LOS TEXTOS DE LOS BOTONES POR EJEMPLO LA ALINEACION DEL TEXTO,
-    COLOR, ESPACIADO ENTRE CARACTERES ETC..
-    SE DEBE DE LLAMAR A LA PROPIEDAD
-    style.
-
-    PARA DARLE UN FONDO DE COLOR A LOS BOTONES SE USAR android:background
-    
-
-    PARA DARLE UNA ANIMACION PERSONALIZADA CUANDO SE PRESIONA LOS BOTONES SE LE TIENE QUE DAR LA PROPIEDAD
-    android:stateListAnimator
 <!--    BOTONES PRIMARIOS-->
     <Button
         android:id="@+id/button2"
