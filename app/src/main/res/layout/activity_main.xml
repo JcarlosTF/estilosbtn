@@ -10,7 +10,7 @@
     <Button
         android:id="@+id/button2"
         style="@style/btnStyleFontEnable"
-        android:background="@drawable/btn_action_pressed"
+        app:rippleColor="@color/btnPressed"
         android:stateListAnimator="@drawable/animation_btn_pressed_global"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
     <Button
         android:id="@+id/button"
         style="@style/btnStyleFontEnable"
-        android:background="@drawable/btn_circle_normal"
+        app:rippleColor="@null"
         android:stateListAnimator="@null"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
     <Button
         android:id="@+id/button3"
         style="@style/btnStyleFontEnable"
-        android:background="@drawable/btn_circle_pressed"
+        app:rippleColor="@null"
         android:stateListAnimator="@null"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -54,10 +54,8 @@
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnPrimarioDeshabilitado"
         style="@style/btnStyleFontDisabled"
-        android:background="@drawable/btn_circle_disabled"
-        android:stateListAnimator="@null"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -71,9 +69,11 @@
 <!--BOTONES SECUNDARIOS-->
     <Button
         android:id="@+id/button5"
-        style="@style/btnStyleFontDisabledSecondaryNormal"
-        android:background="@drawable/change_btn_state_secondary"
+        style="@style/btnStyleFontDisabledSecondaryPressed"
+        app:rippleColor="@color/btnBackgroundSecondaryPressed"
         android:stateListAnimator="@drawable/animation_btn_pressed_global"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/colorFontSecondaryNormal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -83,12 +83,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPrimarioDeshabilitado" />
 
     <Button
         android:id="@+id/button6"
         style="@style/btnStyleFontDisabledSecondaryPressed"
-        android:background="@drawable/btn_circle_secondary_normal"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/colorFontSecondaryNormal"
+        app:rippleColor="@null"
         android:stateListAnimator="@null"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -104,8 +106,10 @@
     <Button
         android:id="@+id/button7"
         style="@style/btnStyleFontDisabledSecondaryPressed"
-        android:background="@drawable/btn_circle_secondary_pressed"
+        app:rippleColor="@null"
         android:stateListAnimator="@null"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/colorFontSecondaryNormal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -118,10 +122,10 @@
         app:layout_constraintTop_toBottomOf="@+id/button6" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/btnSecundarioDeshabilitado"
         style="@style/btnStyleFontDisabledSecondaryDisabled"
-        android:background="@drawable/btn_circle_secondary_disable"
-        android:stateListAnimator="@null"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/colorFontSecondaryNormal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"

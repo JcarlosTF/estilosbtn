@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-
-<!--    COLOR Y CONTORNO REDONDO PARA EL BOTON PRIMARIO NORMAL-->
-    <solid android:color="@color/btnNormal" />
-    <corners android:radius="@dimen/borderRadius" />
-
-</shape>

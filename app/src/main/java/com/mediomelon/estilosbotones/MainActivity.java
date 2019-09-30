@@ -8,21 +8,16 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-Button boton;
+Button btnPrimario,btnSecundario;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        boton= findViewById(R.id.button2);
+        btnPrimario= findViewById(R.id.btnPrimarioDeshabilitado);
+        btnSecundario = findViewById(R.id.btnSecundarioDeshabilitado);
 
-//        boton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(v.getContext(),"mmmm",Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//        boton.setEnabled(false);
-
+        btnPrimario.setEnabled(false);
+        btnSecundario.setEnabled(false);
     }
 }
